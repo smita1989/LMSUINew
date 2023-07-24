@@ -21,6 +21,7 @@ export class AddloanComponent implements OnInit {
   AddLoan() : void {
     this.isSubmitted = true;
     console.log("hi");
+    console.log(this.addLoanForm);
     this.Loans.AddLoan(this.addLoanForm)
     .subscribe(
       data => {
